@@ -1,5 +1,5 @@
 {
-  "name": "mcp-searxng",
+  "name": "mcp-searxng-search",
   "version": "1.0.0",
   "description": "MCP server for SearXNG search and web scraping",
   "license":"MIT",
