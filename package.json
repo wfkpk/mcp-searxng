@@ -1,0 +1,39 @@
+{
+  "name": "mcp-searxng",
+  "version": "1.0.0",
+  "description": "MCP server for SearXNG search and web scraping",
+  "license":"MIT",
+  "homepage": "https://github.com/wfkpk/mcp-searxng",
+  "type": "module",
+  "main": "dist/index.js",
+  "repository": {
+  "type": "git",
+  "url": "https://github.com/wfkpk/mcp-searxng"
+  },
+  "keywords": [
+  "mcp",
+  "searxng",
+  "search",
+  "api",
+  "proxy"
+  ],
+  "scripts": {
+    "build": "tsc && shx chmod +x dist/*.js",
+    "prepare": "npm run build",
+    "watch": "tsc --watch"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.0.0",
+    "@mozilla/readability": "^0.6.0",
+    "axios": "^1.6.0",
+    "cheerio": "^1.0.0",
+    "jsdom": "^26.1.0"
+  },
+  "devDependencies": {
+    "@types/jsdom": "^21.1.7",
+    "@types/node": "^20.0.0",
+    "shx": "^0.3.4",
+    "tsx": "^4.0.0",
+    "typescript": "^5.0.0"
+  }
+}
