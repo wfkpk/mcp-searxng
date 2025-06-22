@@ -17,7 +17,7 @@ import { Readability } from "@mozilla/readability";
 
 const SEARXNG_URL = process.env.SEARXNG_URL;
 if (!SEARXNG_URL) {
-  console.error("Error: BRAVE_API_KEY environment variable is required");
+  console.error("Error: SEARXNG_URL environment variable is required");
   process.exit(1);
 }
 
@@ -210,8 +210,8 @@ const tools: Tool[] = [
 
 const server = new Server(
   {
-    name: "searxng-scraper",
-    version: "1.0.0",
+    name: "mcp-searxng-search",
+    version: "1.2.1", // Match package.json
   },
   {
     capabilities: {

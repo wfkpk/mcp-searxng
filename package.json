@@ -1,21 +1,26 @@
 {
-  "name": "mcp-searxng-search",
-  "version": "1.0.0",
+  "name": "mcp-searxng-scrape",
+  "version": "0.2.2",
   "description": "MCP server for SearXNG search and web scraping",
   "license":"MIT",
   "homepage": "https://github.com/wfkpk/mcp-searxng",
   "type": "module",
   "main": "dist/index.js",
+  "bin": "dist/index.js",
   "repository": {
   "type": "git",
   "url": "https://github.com/wfkpk/mcp-searxng"
   },
   "keywords": [
   "mcp",
+  "modelcontextprotocol",
+  "ai",
   "searxng",
   "search",
   "api",
-  "proxy"
+  "proxy",
+  "scrape",
+  "local"
   ],
   "scripts": {
     "build": "tsc && shx chmod +x dist/*.js",

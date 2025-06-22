@@ -1,8 +1,18 @@
 # MCP SearXNG Search
+
 An MCP server for privacy-focused web search and article scraping using SearXNG instances.
 
 ## Tools
+
+- **searxng_search**
+
+  - Execute web searches with titles, URLs, and snippets
+  - Inputs:
+    - `query` (string): Search terms
+    - `searxng_url` (string, optional): SearXNG instance URL
+
 - **scrape_article**
+
   - Extract clean article content from any webpage
   - Inputs:
     - `url` (string): URL to scrape
@@ -22,7 +32,7 @@ An MCP server for privacy-focused web search and article scraping using SearXNG 
   "mcpServers": {
     "searxng": {
       "command": "npx",
-      "args": ["-y", "mcp-searxng-search"],
+      "args": ["-y", "mcp-searxng-scrape"],
       "env": {
         "SEARXNG_URL": "https://searx.be"
       }
@@ -30,6 +40,7 @@ An MCP server for privacy-focused web search and article scraping using SearXNG 
   }
 }
 ```
+
 #### Local Development
 
 ```json
@@ -48,6 +59,7 @@ An MCP server for privacy-focused web search and article scraping using SearXNG 
 ```
 
 ## Popular SearXNG Instances
+
 - `https://searx.be`
 - `https://search.sapti.me`
 - `https://searx.tiekoetter.com`
@@ -60,17 +72,12 @@ npm install
 npm run build
 ```
 
-## Search Guide
+## SearXNG Setup
+
 For more details on SearXNG setup and customization, refer to the official SearXNG documentation:
 
-🔗 SearXNG Installation Guide
+🔗 [SearXNG Installation Guide](https://docs.searxng.org/admin/installation.html)
 
 ## License
 
 MIT
-
-
-
-
-
-
